@@ -1,6 +1,44 @@
 [project]
 name = "gptcomparison"
 version = "0.1.0"
-description = "Add your description here"
-requires-python = ">=3.13"
-dependencies = []
+description = "GPT Trading Strategy Comparison Tool - Compare LLM-based trading strategies with traditional approaches using separate Alpaca paper portfolios"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "yfinance>=0.2.0",
+    "requests>=2.31.0",
+    "openai>=1.0.0",
+    "anthropic>=0.25.0",
+    "google-generativeai>=0.4.0",
+    "alpaca-trade-api>=3.0.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "plotly>=5.17.0",
+    "schedule>=1.2.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+    "typing-extensions>=4.7.0",
+    "structlog>=23.0.0"
+]
+
+[project.scripts]
+gpt-trading = "src.main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0", 
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.5.0"
+]
+analysis = [
+    "scikit-learn>=1.3.0",
+    "statsmodels>=0.14.0"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

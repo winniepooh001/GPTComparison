@@ -1,0 +1,44 @@
+# Core dependencies
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Data providers
+yfinance>=0.2.0
+requests>=2.31.0
+
+# LLM APIs
+openai>=1.0.0
+anthropic>=0.25.0
+google-generativeai>=0.4.0
+
+# Trading broker
+alpaca-trade-api>=3.0.0
+
+# Visualization and analysis
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.17.0
+
+# Scheduling and async
+schedule>=1.2.0
+asyncio-mqtt>=0.16.0
+
+# Configuration and utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+typing-extensions>=4.7.0
+
+# Logging and monitoring
+structlog>=23.0.0
+
+# Development dependencies
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Optional: For advanced analysis
+scikit-learn>=1.3.0
+statsmodels>=0.14.0
